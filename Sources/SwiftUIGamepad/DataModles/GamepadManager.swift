@@ -10,6 +10,7 @@ import SwiftUI
 import GameController
 import SwiftletUtilities
 import LogManager
+import GraceLanguage
 
 /// Provides static variable storage for a gamepad attached to a SwiftUI `View`.
 open class GamepadManager {
@@ -240,6 +241,18 @@ open class GamepadManager {
     private static var rightThumbstickButtonChanged: Bool = false
     
     // MARK: - Static Functions
+    /// This function will use the `GraceRuntime` to try and expand any macros in the passed in string.
+    /// - Parameter text: The test possibly containing Grace Function Macros to expanded.
+    /// - Returns: The text with any macros expnaded or the original text on error.
+    public static func expandMacros(in text:String) -> String {
+        do {
+            return try GraceRuntime.shared.expandMacros(in: text)
+        } catch {
+            Debug.error(subsystem: "GamepadManager", category: "Expand Macros", "Expanding `\(text)` Error: \(error)")
+            return text
+        }
+    }
+    
     /// This function needs to be called on the the app first starts and becomes active. When a gamepad is connected, the `.onGamepadConnected()` event will be raised on any `View` connected to the `GamepadManager`.
     ///
     /// - Remark: **WARNING!** Don't forget to call the `stopWatchingForGamepads()` function when the app goes inactive to release event monitoring and memory that the gamepad connection is consuming.

@@ -29,7 +29,7 @@ struct GamepadMenuCard: View {
     
     var body: some View {
         if isSelected {
-            Text(markdown: text)
+            Text(markdown: GamepadManager.expandMacros(in: text))
                 .font(font)
                 .foregroundColor(fontColor)
                 .multilineTextAlignment(.leading)
@@ -39,7 +39,7 @@ struct GamepadMenuCard: View {
                 .background(Color("HUDBackgroundSelected"))
                 .cornerRadius(10.0)
         } else {
-            Text(markdown: text)
+            Text(markdown: GamepadManager.expandMacros(in: text))
                 .font(font)
                 .foregroundColor(fontColor)
                 .multilineTextAlignment(.leading)

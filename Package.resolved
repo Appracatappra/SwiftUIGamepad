@@ -1,12 +1,30 @@
 {
   "pins" : [
     {
+      "identity" : "gracelanguage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Appracatappra/GraceLanguage",
+      "state" : {
+        "revision" : "c430781a17d6633d97835126d7408a3b436c9295",
+        "version" : "1.0.2"
+      }
+    },
+    {
       "identity" : "logmanager",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/LogManager",
       "state" : {
         "revision" : "bc21e80add4315c28e9461b8f583cfd79e4c74f8",
         "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "simpleserializer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Appracatappra/SimpleSerializer",
+      "state" : {
+        "revision" : "09b79ad58de8f294acc06ee0b414d8b92dac06cc",
+        "version" : "1.0.4"
       }
     },
     {

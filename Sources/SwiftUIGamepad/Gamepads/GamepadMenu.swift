@@ -16,7 +16,7 @@ struct GamepadMenu: View {
     var id:String = "GPMenu"
     var alignment:HorizontalAlignment = .center
     var menu:GameMenu
-    var fontName:String = "TrueCrimes"
+    var fontName:String = "Arial"
     var fontSize:Float = 40
     var gradientColors:[Color] = [.purple, .blue, .cyan, .green, .yellow, .orange, .red]
     var selectedColors:[Color] = [.orange, .red]

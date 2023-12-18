@@ -25,9 +25,9 @@ struct GamepadMenuItem: View {
     
     var body: some View {
         if isSelected {
-            WordArtView(title: title, fontName: fontName, fontSize: fontSize, gradientColors: selectedColors, rotationDegrees: rotationDegrees, shadowed: shadowed)
+            WordArtView(title: GamepadManager.expandMacros(in: title), fontName: fontName, fontSize: fontSize, gradientColors: selectedColors, rotationDegrees: rotationDegrees, shadowed: shadowed)
         } else {
-            WordArtView(title: title, fontName: fontName, fontSize: fontSize, gradientColors: gradientColors, rotationDegrees: rotationDegrees, shadowed: shadowed)
+            WordArtView(title: GamepadManager.expandMacros(in: title), fontName: fontName, fontSize: fontSize, gradientColors: gradientColors, rotationDegrees: rotationDegrees, shadowed: shadowed)
         }
     }
 }
