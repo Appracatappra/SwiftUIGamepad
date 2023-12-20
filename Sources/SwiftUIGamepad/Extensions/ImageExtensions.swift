@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// Gamepad specific extensions to the `Image` class.
 public extension Image {
     
     // MARK: - Initializers

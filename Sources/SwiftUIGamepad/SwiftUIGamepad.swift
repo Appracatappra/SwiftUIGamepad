@@ -51,6 +51,45 @@ open class SwiftUIGamepad {
     /// Defines the default help background image for controls in the `SwiftUIGamepad` library.
     public static var defaultHelpBackgroundImage:String = "GridBackground"
     
+    /// Defines the default font for the `GamepadMenu` view.
+    public static var gameMenuFontName:String = "Arial"
+    
+    /// Defines the default font size for the `GamepadMenu` view.
+    public static var gameMenuFontSize:Float = 40
+    
+    /// Defines the default gradient colors for the `GamepadMenu` view.
+    public static var gameMenuGradientColors:[Color] = [.white, .gray]
+    
+    /// Defines the default selected item gradient colors for the `GamepadMenu` view.
+    public static var gameMenuSelectedColors:[Color] = [.orange, .red]
+    
+    /// Defines the default rotation for the `GamepadMenu` view.
+    public static var gameMenuRotationDegrees:Double = 0
+    
+    /// Defines the default shadow state for the `GamepadMenu` view.
+    public static var gameMenuShadowed:Bool = true
+    
+    /// Defines the default sound source for the `GamepadMenu` view.
+    public static var gamepadMenuSoundSource:Source = .packageBundle
+    
+    /// Defines the default menu item selected for the `GamepadMenu` view.
+    public static var gamepadMenuSelectedSound:String = "mouse-click.mp3"
+    
+    /// Defines the default menu item selectionchanged the `GamepadMenu` view.
+    public static var gamepadMenuSelectionChangedSound:String = "diamond-click.mp3"
+    
+    /// Defines the default card font for the `GamepadMenu` view.
+    public static var gameMenuCardFontName:String = "Arial"
+    
+    /// Defines the default card font size for the `GamepadMenu` view.
+    public static var gameMenuCardFontSize:Float = 24
+    
+    /// Defines the default card font color for the `GamepadMenu` view.
+    public static var gameMenuCardFontColor:Color = .white
+    
+    /// Defines the default card background color for the `GamepadMenu` view.
+    public static var gameMenuCardBackground:Color = .blue
+    
     // MARK: - Static Functions
     /// Gets the path to the requested resource stored in the Swift Package's Bundle.
     /// - Parameters:

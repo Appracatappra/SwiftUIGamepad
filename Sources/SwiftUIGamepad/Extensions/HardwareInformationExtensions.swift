@@ -8,6 +8,7 @@
 import Foundation
 import SwiftletUtilities
 
+/// Gamepad specific extensions to the `HardwareInfomation` class.
 extension HardwareInformation {
     /// Returns the padding that is used on the Tips pages based on the given device.
     public static var tipPaddingVertical:Int {

@@ -7,12 +7,28 @@
 
 import SwiftUI
 
+/// A View that displays an animated waiting indicator for the `GamepadRequiredOverlay`.
 public struct GamepadWaitingIndicator: View {
     
+    // MARK: - Properties
+    /// The `StrokeStyle` of the control.
     public var style = StrokeStyle (lineWidth: 6, lineCap: .round)
+    
+    /// The color of the control.
     public var color = Color.white
     
+    /// If `true` the control is animated.
     @State public var animate = false
+    
+    // MARK: - Initializers
+    /// Creates a new instance.
+    /// - Parameters:
+    ///   - style: The `StrokeStyle` of the control.
+    ///   - color: The color of the control.
+    public init(style: StrokeStyle = StrokeStyle (lineWidth: 6, lineCap: .round), color: SwiftUI.Color = Color.white) {
+        self.style = style
+        self.color = color
+    }
     
     // MARK: - Control Body
     /// The body of the control.

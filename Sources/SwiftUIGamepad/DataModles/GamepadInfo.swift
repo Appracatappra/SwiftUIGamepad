@@ -76,7 +76,7 @@ open class GamePadInfo {
         }
     }
     
-    // Returns the title for the left Shoulder Button
+    /// Returns the title for the left Shoulder Button
     public var leftShoulderTitle:String {
         return "Left Shoulder Button"
     }
@@ -93,7 +93,7 @@ open class GamePadInfo {
         }
     }
     
-    // Returns the title for the right Shoulder Button
+    /// Returns the title for the right Shoulder Button
     public var rightShoulderTitle:String {
         return "Right Shoulder Button"
     }
@@ -110,7 +110,7 @@ open class GamePadInfo {
         }
     }
     
-    // Returns the title for the left Trigger
+    /// Returns the title for the left Trigger
     public var leftTriggerTitle:String {
         return "Left Trigger"
     }
@@ -127,7 +127,7 @@ open class GamePadInfo {
         }
     }
     
-    // Returns the title for the left Trigger
+    /// Returns the title for the left Trigger
     public var rightTriggerTitle:String {
         return "Left Trigger"
     }

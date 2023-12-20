@@ -10,7 +10,7 @@ import SwiftUI
 import Observation
 
 /// Defines a item that will be displayed in a gamepad driven menu.
-@Observable open class GameMenuItem: Identifiable {
+@Observable open class GamepadMenuItem: Identifiable {
     /// Defines a type of action that will be taken when a `GameMenuItem` is selected by the user.
     public typealias ItemAction = () -> Void
     
