@@ -10,6 +10,7 @@ import Foundation
 import SwiftUI
 import GameController
 
+#if !os(macOS)
 /// A special SwiftUI container `View` that can be configured to ignore the standard user interaction events that are sent to the responder chain and use only the events coming from a connected gamepad.
 /// - Remark: For example, if the `useGamepadInputOnly` property of the `GamepadInteractionController` is `true`, then swipes on the Siri Remote's touchpad for an app running on an Apple TV will not move focus between buttons on the screen.
 public struct GamepadInteractionController<Content: View>: UIViewControllerRepresentable {
@@ -55,3 +56,4 @@ public struct GamepadInteractionController<Content: View>: UIViewControllerRepre
         uiViewController.controllerUserInteractionEnabled = !useGamepadInputOnly
     }
 }
+#endif
