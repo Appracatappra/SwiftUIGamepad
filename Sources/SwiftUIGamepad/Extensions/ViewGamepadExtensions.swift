@@ -13,6 +13,55 @@ import SwiftUI
 import GameController
 
 /// Extends the Swift UI View with the ability to respond to a single gamepad that is attached to the device.
+///
+/// For example, let's take a look at the `body` of an About View:
+///
+/// ```
+/// @State var showGamepadHelp:Bool = false
+/// @State var isGamepadConnected:Bool = false
+///
+///  var body: some View {
+///     mainContents()
+///     .onAppear {
+///         connectGamepad(viewID: "About", handler: { controller, gamepadInfo in
+///             isGamepadConnected = true
+///             buttonMenuUsage(viewID: "About", "Return to the **Cover Page Menu**.")
+///             buttonAUsage(viewID: "About", "Show or hide **Gamepad Help**.")
+///         })
+///     }
+///     .onDisappear {
+///         disconnectGamepad(viewID: "About")
+///     }
+///     .onRotate { newOrientation in
+///         Execute.onMain {
+///             orientation = newOrientation
+///         }
+///     }
+///     .onGampadAppBecomingActive(viewID: "About") {
+///         reconnectGamepad()
+///     }
+///     .onGamepadDisconnected(viewID: "About") { controller, gamepadInfo in
+///         isGamepadConnected = false
+///     }
+///     .onGamepadButtonMenu(viewID: "About") { isPressed in
+///         if isPressed {
+///             // Return to main menu ...
+///         }
+///     }
+///     .onGamepadButtonA(viewID: "About") { isPressed in
+///         if isPressed {
+///             showGamepadHelp = !showGamepadHelp
+///         }
+///     }
+///     .onGamepadLeftShoulder(viewID: "About") { isPressed, value in
+///         if isPressed {
+///             // Return to main menu ...
+///         }
+///     }
+/// }
+/// ```
+///
+/// - Remark: For `SwiftUIGamepad` to function, you **must** add the `GamepadManager` events to the app's `.onChange` event. See the **Where To Set The Style Changes and Wire-Up Gamepad Support** documentation.
 extension View {
     // MARK: - Type Aliases
     /// Defines a handler for gamepad status events such as a gamepad connecting or disconnecting from the device the app is running on.

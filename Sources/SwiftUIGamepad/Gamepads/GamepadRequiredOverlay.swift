@@ -84,7 +84,7 @@ public struct GamepadRequiredOverlay: View {
                 .multilineTextAlignment(.center)
                 .padding(.bottom)
             
-            GamepadWaitingIndicator()
+            ScaleableWaitingIndicator()
                 .frame(width: 100, height: 100)
         }
     }
@@ -126,7 +126,7 @@ public struct GamepadRequiredOverlay: View {
                     .multilineTextAlignment(.center)
                     .padding(.bottom)
                 
-                GamepadWaitingIndicator()
+                ScaleableWaitingIndicator()
                     .frame(width: 100, height: 100)
             }
             

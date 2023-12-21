@@ -146,5 +146,5 @@ public struct GamepadHelpEntry: View {
 
 #Preview("Entry") {
     GamepadHelpEntry(iconName: "PS4_Circle", controlTitle: "Button", controlUsage: "This is a sample game control")
-        .background(Color.black)
+        .background(Color.gray)
 }

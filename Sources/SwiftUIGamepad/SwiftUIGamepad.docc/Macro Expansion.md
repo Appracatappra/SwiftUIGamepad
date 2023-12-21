@@ -1,12 +1,16 @@
 # Macro Expansion
 
-Because of the requirements for several game engines and some specific connections to the host app, `SwiftUIGamepad` provides the ability to automatically expand macros written in the **Grace Language** (see https://github.com/Appracatappra/GraceLanguage) for many of its UI controls.
+Most of the UI controls in `SwiftUIGamepad` provide the ability to automatically expand macros written in the **Grace Language** for their displayed text.
 
 ## Overview
 
-When working with the `GamepadMenuView` controls, the items in the menu will automatically expand any **Grace Language Macros** in the text provided to the control. 
+Because there are situations where `SwiftUIGamepad` UI controls need to respond to user interaction without having to be recreated, most of the UI controls in `SwiftUIGamepad` provide the ability to automatically expand macros written in the **Grace Language** (see https://github.com/Appracatappra/GraceLanguage for full details on Grace).
+
+For example, when defining a `GamepadMenuItem` if you set the `title` to a string value containing a **Grace Macro**, the `GamepadMenuCardView` and `GamepadMenuItemView` controls will auto expand this text before display.
 
 Internally, these controls call the `GraceRuntime.expandMacros` function to handle the text expansion. This allows the menu item to respond to changes in the app or game without the menu items having to be recreated.
+
+> The following section if from the **Grace Language Documentation**. For full details on **Grace Macros** please see https://github.com/Appracatappra/GraceLanguage.
 
 ### Expanding String Macros
 

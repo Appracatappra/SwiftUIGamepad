@@ -6,6 +6,20 @@
 
 Using `SwiftUIGamepad` you can easily add Gamepad support to any `SwiftUI` based app. `SwiftUIGamepad` provides a built-in set of Gamepad images and support for showing a help overlay based on the way the Gamepad is being used in any `View`. `SwiftUIGamepad` also provides support for Gamepads attaching/detaching from the Device and has an overlay when the App requires a Gamepad to work.
 
+### Enabling Gamepad Support
+
+Before you can use a Gamepad in your Swift App, you need to enable support. In Xcode, select your App's **Project** > **Signing & Capabilities** > **+ Capability** and add **Game Controllers**:
+
+@Image(source: "Image04.png", alt: "Xcode Signing & Capabilities")
+
+Once enabled, select the types of Gamepads that you want to support from the list of checkboxes.
+
+* **Extended Gamepad** - These are game controller like PS4, PS5 and Xbox gamepads. This is the main type of gamepad that the package was designed to support.
+* **Micro Gamepad** - This is the Apple TV Siri Remote that can act like a tiny gamepad. 
+* **Directional Gamepad** - A small gamepad that has a D-Pad and A & B Buttons only. 
+
+> If you have **Micro Gamepad** enabled, it can keep the Apple TV from recognizing that an **Extended Gamepad** has connected. If you are using this package in a tvOS app, I suggest disabling it.
+
 ### Responding to Gamepad Events
 
 By importing `SwiftUIGamepad` into a SwiftUI `View` definition, it will get several new events that you can respond to as the user interacts with the gamepad and it connects to or disconnects from the device the app is running on.
@@ -79,13 +93,19 @@ The first thing to note is when the `View` appears we ask it to request access t
 > 
 > Additionally, all `SwiftUIGamepad` controls on the same `View` **must** use the same `viewID` property.
 
-If gamepad access is established, we set a state variable and provide user **Help** descriptions for the gamepad controls the `View` responds to. You can use the `GamepadHelpOverlay` view to display standardized help inside of your app as follows:
+If gamepad access is established, we set a state variable and provide user **Help** descriptions for the gamepad controls the `View` responds to. 
+
+You can use the `GamepadHelpOverlay` view to display standardized help inside of your app as follows:
 
 ```
 if showGamepadHelp {
     GamepadHelpOverlay()
 }
 ```
+
+@Image(source: "Image02.png", alt: "Help Overlay")
+
+The entries that you've added using functions like `buttonMenuUsage` or `buttonAUsage` will be displayed here.
 
 Additionally, if your app required a gamepad to work, you can use the standardized `GamepadRequiredOverlay` to request that the user connect a gamepad before continuing:
 
@@ -94,6 +114,8 @@ if !isGamepadConnected {
     GamepadRequiredOverlay()
 }
 ```
+
+@Image(source: "Image03.png", alt: "Gamepad Required Overlay")
 
 #### Gamepad Connection Events
 
@@ -148,6 +170,8 @@ The `GamepadControlTip` control can be used to display quick help to the app's u
 ```
 GamepadControlTip(iconName: GamepadManager.gamepadOne.gampadInfo.buttonAImage, title: "Help", scale: ScreenMetrics.controlButtonScale, enabledColor: Color("HUDForeground"))
 ```
+
+@Image(source: "Image01.png", alt: "Gamepad Quick Tip")
 
 In this example `GamepadManager.gamepadOne.gampadInfo.buttonAImage` will get the correct image for the **A Button** based on which type of gamepad (PS4, PS5, Xbox, etc.) the user has connected to the device.
 

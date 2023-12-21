@@ -10,6 +10,7 @@ import SwiftUI
 import Observation
 
 /// Defines a item that will be displayed in a gamepad driven menu.
+/// - Remark: The string value that you set for the `title` property can contain **Grace Language Macros**. These macros will be automatically expanded when the text is displayed in your app's UI. For more information on Grace, see: https://github.com/Appracatappra/GraceLanguage
 @Observable open class GamepadMenuItem: Identifiable {
     /// Defines a type of action that will be taken when a `GameMenuItem` is selected by the user.
     public typealias ItemAction = () -> Void
