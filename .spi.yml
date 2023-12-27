@@ -7,6 +7,4 @@ builder:
     scheme: SwiftUIGamepad
   - platform: tvos
     scheme: SwiftUIGamepad
-  - platform: watchos
-    scheme: SwiftUIGamepad
   - documentation_targets: [SwiftUIGamepad]
