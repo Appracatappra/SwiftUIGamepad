@@ -4,6 +4,29 @@
 
 `SwiftUIGamepad` makes it easy to add Gamepad support to any `SwiftUI View`.
 
+## Support
+
+If you find `SwiftUIGamepad` useful and would like to help support its continued development and maintenance, please consider making a small donation, especially if you are using it in a commercial product:
+
+<a href="https://www.buymeacoffee.com/KevinAtAppra" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+It's through the support of contributors like yourself, I can continue to build, release and maintain high-quality, well documented Swift Packages like `SwiftUIGamepad` for free.
+
+<a name="Installation"></a>
+## Installation
+
+**Swift Package Manager** (Xcode 11 and above)
+
+1. In Xcode, select the **File** > **Add Package Dependency…** menu item.
+2. Paste `https://github.com/Appracatappra/SwiftUIGamepad.git` in the dialog box.
+3. Follow the Xcode's instruction to complete the installation.
+
+> Why not CocoaPods, or Carthage, or blank?
+
+Supporting multiple dependency managers makes maintaining a library exponentially more complicated and time consuming.
+
+Since, the **Swift Package Manager** is integrated with Xcode 11 (and greater), it's the easiest choice to support going further.
+
 ## Overview
 
 Using `SwiftUIGamepad` you can easily add Gamepad support to any `SwiftUI` based app. `SwiftUIGamepad` provides a built-in set of Gamepad images and support for showing a help overlay based on the way the Gamepad is being used in any `View`. `SwiftUIGamepad` also provides support for Gamepads attaching/detaching from the Device and has an overlay when the App requires a Gamepad to work.
@@ -338,4 +361,4 @@ With this code in place, make any style changes in `func application(_ applicati
 
 # Documentation
 
-The **Package** includes full **DocC Documentation** for all of Grace's features.
+The **Package** includes full **DocC Documentation** for all of its features.
