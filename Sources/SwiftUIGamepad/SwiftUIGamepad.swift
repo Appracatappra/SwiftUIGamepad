@@ -88,7 +88,13 @@ open class SwiftUIGamepad {
     public static var gameMenuCardFontColor:Color = .white
     
     /// Defines the default card background color for the `GamepadMenu` view.
-    public static var gameMenuCardBackground:Color = .blue
+    public static var gameMenuCardBackground:Color = .gray
+    
+    /// Defines the default card background color for the `GamepadMenu` view.
+    public static var gameMenuCardSelectedBackground:Color = .blue
+    
+    /// Defines the default card font color for the `GamepadMenu` view.
+    public static var gameMenuCardBorderColor:Color = .white
     
     // MARK: - Static Functions
     /// Gets the path to the requested resource stored in the Swift Package's Bundle.

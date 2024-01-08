@@ -73,8 +73,8 @@ public struct GamepadMenuCardView: View {
                 .multilineTextAlignment(.leading)
                 .padding(.all)
                 .frame(width: CGFloat(boxWidth))
-                .border(Color("HUDBorderSelected"), width: 4)
-                .background(Color("HUDBackgroundSelected"))
+                .border(SwiftUIGamepad.gameMenuCardBorderColor, width: 4)
+                .background(SwiftUIGamepad.gameMenuCardSelectedBackground)
                 .cornerRadius(10.0)
         } else {
             Text(markdown: GamepadManager.expandMacros(in: text))
@@ -83,7 +83,7 @@ public struct GamepadMenuCardView: View {
                 .multilineTextAlignment(.leading)
                 .padding(.all)
                 .frame(width: CGFloat(boxWidth))
-                .border(Color("HUDBorder"), width: 4)
+                .border(SwiftUIGamepad.gameMenuCardBorderColor, width: 4)
                 .background(backgroundColor)
                 .cornerRadius(10.0)
         }
