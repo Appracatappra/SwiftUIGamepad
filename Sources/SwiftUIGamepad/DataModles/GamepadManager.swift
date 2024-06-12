@@ -45,7 +45,7 @@ open class GamepadManager {
     
     // MARK: - Static Properties
     /// The shared values for the first attached gamepad.
-    public static var gamepadOne:GamepadManager = GamepadManager()
+    public nonisolated(unsafe) static var gamepadOne:GamepadManager = GamepadManager()
     
     /// Returns the first gamepad that is attached to the device.
     public static var controller:GCController? {
@@ -110,135 +110,135 @@ open class GamepadManager {
     }
     
     /// If `true` this app supports using the Apple TV Remote as a mini gamepad.
-    public static var supportsMicroGamepad:Bool = false
+    public nonisolated(unsafe) static var supportsMicroGamepad:Bool = false
     
     /// If `true` this app supports using virtual gamepads.
-    public static var supportsVirtualGamepad:Bool = false
+    public nonisolated(unsafe) static var supportsVirtualGamepad:Bool = false
     
     // !!!: Continous properties
     /// If `true`, the user is pressing the left shoulder button.
-    private static var leftShoulderPressed: Bool = false
+    private nonisolated(unsafe) static var leftShoulderPressed: Bool = false
     
     /// The amoun of pressure the user is applying to the left shoulder button
-    private static var leftShoulderPressure: Float = 0.0
+    private nonisolated(unsafe) static var leftShoulderPressure: Float = 0.0
     
     /// If `true`, the user is pressing the right shoulder button.
-    private static var rightShoulderPressed: Bool = false
+    private nonisolated(unsafe) static var rightShoulderPressed: Bool = false
     
     /// The amoun of pressure the user is applying to the right shoulder button
-    private static var rightShoulderPressure: Float = 0.0
+    private nonisolated(unsafe) static var rightShoulderPressure: Float = 0.0
     
     /// If `true`, the user is pressing the left trigger.
-    private static var leftTriggerPressed: Bool = false
+    private nonisolated(unsafe) static var leftTriggerPressed: Bool = false
     
     /// The amoun of pressure the user is applying to the left trigger
-    private static var leftTriggerPressure: Float = 0.0
+    private nonisolated(unsafe) static var leftTriggerPressure: Float = 0.0
     
     /// If `true`, the user is pressing the right trigger.
-    private static var rightTriggerPressed: Bool = false
+    private nonisolated(unsafe) static var rightTriggerPressed: Bool = false
     
     /// The amoun of pressure the user is applying to the right trigger
-    private static var rightTriggerPressure: Float = 0.0
+    private nonisolated(unsafe) static var rightTriggerPressure: Float = 0.0
     
     /// If `true`, the user is pressing button menu.
-    private static var buttonMenuPressed: Bool = false
+    private nonisolated(unsafe) static var buttonMenuPressed: Bool = false
     
     /// If `true`, the user is pressing button options.
-    private static var buttonOptionsPressed: Bool = false
+    private nonisolated(unsafe) static var buttonOptionsPressed: Bool = false
     
     /// If `true`, the user is pressing button home.
-    private static var buttonHomePressed: Bool = false
+    private nonisolated(unsafe) static var buttonHomePressed: Bool = false
     
     /// If `true`, the user is pressing button A.
-    private static var buttonAPressed: Bool = false
+    private nonisolated(unsafe) static var buttonAPressed: Bool = false
     
     /// If `true`, the user is pressing button B.
-    private static var buttonBPressed: Bool = false
+    private nonisolated(unsafe) static var buttonBPressed: Bool = false
     
     /// If `true`, the user is pressing button X.
-    private static var buttonXPressed: Bool = false
+    private nonisolated(unsafe) static var buttonXPressed: Bool = false
     
     /// If `true`, the user is pressing button Y.
-    private static var buttonYPressed: Bool = false
+    private nonisolated(unsafe) static var buttonYPressed: Bool = false
     
     /// If `true` the left thumbstick in being moved by the user.
-    private static var leftThumbstickMoving: Bool = false
+    private nonisolated(unsafe) static var leftThumbstickMoving: Bool = false
     
     /// The amount of pressure the user is applying to the left thumbstick in the X axis.
-    private static var leftThumbstickXAxis: Float = 0.0
+    private nonisolated(unsafe) static var leftThumbstickXAxis: Float = 0.0
     
     /// The amount of pressure the user is applying to the left thumbstick in the Y axis.
-    private static var leftThumbstickYAxis: Float = 0.0
+    private nonisolated(unsafe) static var leftThumbstickYAxis: Float = 0.0
     
     /// If `true`, the user is pressing left thumbstick button.
-    private static var leftThumbstickButtonPressed: Bool = false
+    private nonisolated(unsafe) static var leftThumbstickButtonPressed: Bool = false
     
     /// If `true` the right thumbstick in being moved by the user.
-    private static var rightThumbstickMoving: Bool = false
+    private nonisolated(unsafe) static var rightThumbstickMoving: Bool = false
     
     /// The amount of pressure the user is applying to the right thumbstick in the X axis.
-    private static var rightThumbstickXAxis: Float = 0.0
+    private nonisolated(unsafe) static var rightThumbstickXAxis: Float = 0.0
     
     /// The amount of pressure the user is applying to the right thumbstick in the Y axis.
-    private static var rightThumbstickYAxis: Float = 0.0
+    private nonisolated(unsafe) static var rightThumbstickYAxis: Float = 0.0
     
     /// If `true`, the user is pressing right thumbstick button.
-    private static var rightThumbstickButtonPressed: Bool = false
+    private nonisolated(unsafe) static var rightThumbstickButtonPressed: Bool = false
     
     /// If `true` the Dpad in being pressed by the user.
-    private static var dpadMoving: Bool = false
+    private nonisolated(unsafe) static var dpadMoving: Bool = false
     
     /// The Dpad direction in the X axis.
-    private static var dpadXAxis: Float = 0.0
+    private nonisolated(unsafe) static var dpadXAxis: Float = 0.0
     
     /// The Dpad direction in the Y axis.
-    private static var dpadYAxis: Float = 0.0
+    private nonisolated(unsafe) static var dpadYAxis: Float = 0.0
     
     /// A private timer that handles any of the gamepads controls being operated in the continous mode.
-    private static var eventTimer: Timer = Timer()
+    private nonisolated(unsafe) static var eventTimer: Timer = Timer()
     
     // !!!: Control debounce handling
     /// If `true` the left shoulder button's state has changed, else returns `false`.
-    private static var leftShoulderChanged: Bool = false
+    private nonisolated(unsafe) static var leftShoulderChanged: Bool = false
     
     /// If `true` the right shoulder button's state has changed, else returns `false`.
-    private static var rightShoulderChanged: Bool = false
+    private nonisolated(unsafe) static var rightShoulderChanged: Bool = false
     
     /// If `true` the left trigger button's state has changed, else returns `false`.
-    private static var leftTriggerChanged: Bool = false
+    private nonisolated(unsafe) static var leftTriggerChanged: Bool = false
     
     /// If `true` the right trigger button's state has changed, else returns `false`.
-    private static var rightTriggerChanged: Bool = false
+    private nonisolated(unsafe) static var rightTriggerChanged: Bool = false
     
     /// If `true` the home button's state has changed, else returns `false`.
-    private static var buttonHomeChanged: Bool = false
+    private nonisolated(unsafe) static var buttonHomeChanged: Bool = false
     
     /// If `true` the options button's state has changed, else returns `false`.
-    private static var buttonOptionsChanged: Bool = false
+    private nonisolated(unsafe) static var buttonOptionsChanged: Bool = false
     
     /// If `true` the menu button's state has changed, else returns `false`.
-    private static var buttonMenuChanged: Bool = false
+    private nonisolated(unsafe) static var buttonMenuChanged: Bool = false
     
     /// If `true` the A button's state has changed, else returns `false`.
-    private static var buttonAChanged: Bool = false
+    private nonisolated(unsafe) static var buttonAChanged: Bool = false
     
     /// If `true` the B button's state has changed, else returns `false`.
-    private static var buttonBChanged: Bool = false
+    private nonisolated(unsafe) static var buttonBChanged: Bool = false
     
     /// If `true` the X button's state has changed, else returns `false`.
-    private static var buttonXChanged: Bool = false
+    private nonisolated(unsafe) static var buttonXChanged: Bool = false
     
     /// If `true` the Y button's state has changed, else returns `false`.
-    private static var buttonYChanged: Bool = false
+    private nonisolated(unsafe) static var buttonYChanged: Bool = false
     
     /// If `true` the dpad button's state has changed, else returns `false`.
-    private static var dpadChanged: Bool = false
+    private nonisolated(unsafe) static var dpadChanged: Bool = false
     
     /// If `true` the left thumbstick button's state has changed, else returns `false`.
-    private static var leftThumbstickButtonChanged: Bool = false
+    private nonisolated(unsafe) static var leftThumbstickButtonChanged: Bool = false
     
     /// If `true` the right thumbstick button's state has changed, else returns `false`.
-    private static var rightThumbstickButtonChanged: Bool = false
+    private nonisolated(unsafe) static var rightThumbstickButtonChanged: Bool = false
     
     // MARK: - Static Functions
     /// This function will use the `GraceRuntime` to try and expand any macros in the passed in string.

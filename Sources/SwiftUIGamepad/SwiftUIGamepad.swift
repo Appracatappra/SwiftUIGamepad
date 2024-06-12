@@ -25,76 +25,76 @@ open class SwiftUIGamepad {
     
     // MARK: - Static Properies
     /// The default location that this library should look for images in.
-    public static var imageLocation:Source = .packageBundle
+    public nonisolated(unsafe) static var imageLocation:Source = .packageBundle
     
     /// The default location that this library should look for sound effects in.
-    public static var soundLocation:Source = .packageBundle
+    public nonisolated(unsafe) static var soundLocation:Source = .packageBundle
     
     /// Defines the default font for UI items in the `SwiftUIGamepad` library.
-    public static var defaultFontName:String = "Arial"
+    public nonisolated(unsafe) static var defaultFontName:String = "Arial"
     
     /// Defines the default background color for UI items in the `SwiftUIGamepad` library.
-    public static var defaultBackgroundColor:Color = Color.gray
+    public nonisolated(unsafe) static var defaultBackgroundColor:Color = Color.gray
     
     /// Defines the default enabled color for controls in the `SwiftUIGamepad` library.
-    public static var defaultEnabledColor:Color = Color.black
+    public nonisolated(unsafe) static var defaultEnabledColor:Color = Color.black
     
     /// Defines the default disabled color for controls in the `SwiftUIGamepad` library.
-    public static var defaultDisabledColor:Color = Color.gray
+    public nonisolated(unsafe) static var defaultDisabledColor:Color = Color.gray
     
     /// Defines the default help font color for controls in the `SwiftUIGamepad` library.
-    public static var defaultHelpFontColor:Color = .white
+    public nonisolated(unsafe) static var defaultHelpFontColor:Color = .white
     
     /// Defines the default help background color for controls in the `SwiftUIGamepad` library.
-    public static var defaultHelpBackgroundColor:Color = .black
+    public nonisolated(unsafe) static var defaultHelpBackgroundColor:Color = .black
     
     /// Defines the default help background image for controls in the `SwiftUIGamepad` library.
-    public static var defaultHelpBackgroundImage:String = "GridBackground"
+    public nonisolated(unsafe) static var defaultHelpBackgroundImage:String = "GridBackground"
     
     /// Defines the default font for the `GamepadMenu` view.
-    public static var gameMenuFontName:String = "Arial"
+    public nonisolated(unsafe) static var gameMenuFontName:String = "Arial"
     
     /// Defines the default font size for the `GamepadMenu` view.
-    public static var gameMenuFontSize:Float = 40
+    public nonisolated(unsafe) static var gameMenuFontSize:Float = 40
     
     /// Defines the default gradient colors for the `GamepadMenu` view.
-    public static var gameMenuGradientColors:[Color] = [.white, .gray]
+    public nonisolated(unsafe) static var gameMenuGradientColors:[Color] = [.white, .gray]
     
     /// Defines the default selected item gradient colors for the `GamepadMenu` view.
-    public static var gameMenuSelectedColors:[Color] = [.orange, .red]
+    public nonisolated(unsafe) static var gameMenuSelectedColors:[Color] = [.orange, .red]
     
     /// Defines the default rotation for the `GamepadMenu` view.
-    public static var gameMenuRotationDegrees:Double = 0
+    public nonisolated(unsafe) static var gameMenuRotationDegrees:Double = 0
     
     /// Defines the default shadow state for the `GamepadMenu` view.
-    public static var gameMenuShadowed:Bool = true
+    public nonisolated(unsafe) static var gameMenuShadowed:Bool = true
     
     /// Defines the default sound source for the `GamepadMenu` view.
-    public static var gamepadMenuSoundSource:Source = .packageBundle
+    public nonisolated(unsafe) static var gamepadMenuSoundSource:Source = .packageBundle
     
     /// Defines the default menu item selected for the `GamepadMenu` view.
-    public static var gamepadMenuSelectedSound:String = "mouse-click.mp3"
+    public nonisolated(unsafe) static var gamepadMenuSelectedSound:String = "mouse-click.mp3"
     
     /// Defines the default menu item selectionchanged the `GamepadMenu` view.
-    public static var gamepadMenuSelectionChangedSound:String = "diamond-click.mp3"
+    public nonisolated(unsafe) static var gamepadMenuSelectionChangedSound:String = "diamond-click.mp3"
     
     /// Defines the default card font for the `GamepadMenu` view.
-    public static var gameMenuCardFontName:String = "Arial"
+    public nonisolated(unsafe) static var gameMenuCardFontName:String = "Arial"
     
     /// Defines the default card font size for the `GamepadMenu` view.
-    public static var gameMenuCardFontSize:Float = 24
+    public nonisolated(unsafe) static var gameMenuCardFontSize:Float = 24
     
     /// Defines the default card font color for the `GamepadMenu` view.
-    public static var gameMenuCardFontColor:Color = .white
+    public nonisolated(unsafe) static var gameMenuCardFontColor:Color = .white
     
     /// Defines the default card background color for the `GamepadMenu` view.
-    public static var gameMenuCardBackground:Color = .gray
+    public nonisolated(unsafe) static var gameMenuCardBackground:Color = .gray
     
     /// Defines the default card background color for the `GamepadMenu` view.
-    public static var gameMenuCardSelectedBackground:Color = .blue
+    public nonisolated(unsafe) static var gameMenuCardSelectedBackground:Color = .blue
     
     /// Defines the default card font color for the `GamepadMenu` view.
-    public static var gameMenuCardBorderColor:Color = .white
+    public nonisolated(unsafe) static var gameMenuCardBorderColor:Color = .white
     
     // MARK: - Static Functions
     /// Gets the path to the requested resource stored in the Swift Package's Bundle.
