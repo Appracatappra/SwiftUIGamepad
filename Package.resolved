@@ -1,12 +1,13 @@
 {
+  "originHash" : "bf847893fab929c42658387a541881f7694e3858ed1af6d7a6d7d0b2c8ab3dfb",
   "pins" : [
     {
       "identity" : "gracelanguage",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/GraceLanguage",
       "state" : {
-        "revision" : "c430781a17d6633d97835126d7408a3b436c9295",
-        "version" : "1.0.2"
+        "revision" : "fbca80d13797c56972bd0638c597583dff717586",
+        "version" : "2.0.0"
       }
     },
     {
@@ -14,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/LogManager",
       "state" : {
-        "revision" : "bc21e80add4315c28e9461b8f583cfd79e4c74f8",
-        "version" : "1.0.3"
+        "revision" : "bf916fa61fd3d3f006bcede8e9ca2d4910279478",
+        "version" : "2.0.0"
       }
     },
     {
@@ -23,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/SimpleSerializer",
       "state" : {
-        "revision" : "09b79ad58de8f294acc06ee0b414d8b92dac06cc",
-        "version" : "1.0.4"
+        "revision" : "77d7fb43e248e710d0d6a348849a29d3b8a2c504",
+        "version" : "2.0.0"
       }
     },
     {
@@ -32,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/SoundManager",
       "state" : {
-        "revision" : "04a17d306bea71729877696fa16a55cfb84f8e1a",
-        "version" : "1.0.3"
+        "revision" : "6e73b374abdd9858a873fa72a89e5e09b0ffb4c8",
+        "version" : "2.0.0"
       }
     },
     {
@@ -41,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/SwiftletUtilities",
       "state" : {
-        "revision" : "e0cc0c97dea11bca029bc18ef784d11415255c93",
-        "version" : "1.1.14"
+        "revision" : "b3564b394c7d81f02c8f62e821a38efa62a97d66",
+        "version" : "2.0.1"
       }
     },
     {
@@ -50,10 +51,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/SwiftUIKit",
       "state" : {
-        "revision" : "92de0ba13b9d66d71436cf5c566e7838b5be325b",
-        "version" : "1.0.10"
+        "revision" : "5ce442cb31d269ecbaf3df31cb6abe77099da0a3",
+        "version" : "2.0.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
