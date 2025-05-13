@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 6.1
 
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
@@ -28,7 +28,10 @@ let package = Package(
         .target(
             name: "SwiftUIGamepad",
             dependencies: ["LogManager", "SwiftletUtilities", "SoundManager", "SwiftUIKit", "GraceLanguage"],
-            resources: [.process("Resources")]
+            resources: [.process("Resources")],
+            swiftSettings: [
+                .swiftLanguageMode(.v6)
+            ]
         ),
         .testTarget(
             name: "SwiftUIGamepadTests",
