@@ -1,13 +1,13 @@
 {
-  "originHash" : "bf847893fab929c42658387a541881f7694e3858ed1af6d7a6d7d0b2c8ab3dfb",
+  "originHash" : "9803aecd0c074d2000dbc6f4d859dbb88d04ab0889c5ff2d79e8c2ac02b772c5",
   "pins" : [
     {
       "identity" : "gracelanguage",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/GraceLanguage",
       "state" : {
-        "revision" : "1031c76395cad15bd5fa423ef14fc7aa075b3953",
-        "version" : "2.0.3"
+        "revision" : "4f3960a1dcdeb9f0786a0ef222b4f00b59b5926a",
+        "version" : "2.1.0"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/LogManager",
       "state" : {
-        "revision" : "ed7b6f091d9f261e75211c214a4ba0ea3ba7a84d",
-        "version" : "2.0.4"
+        "revision" : "0dc18ac85ccdbb979152a1e4f64bfc6f377513b1",
+        "version" : "2.1.0"
       }
     },
     {
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/SimpleSerializer",
       "state" : {
-        "revision" : "c68c9b9f44bf8d17b1cebd56fb478233b6583593",
-        "version" : "2.0.2"
+        "revision" : "ecfea26cc5a37441009297cc97b660fd5190c15f",
+        "version" : "2.5.0"
       }
     },
     {
@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/SoundManager",
       "state" : {
-        "revision" : "bbfbe3ac35f97accc3f9084ee5384d6b0786602f",
-        "version" : "2.0.3"
+        "revision" : "6bb1651d29ec084edc94a1816f20c517882bcc45",
+        "version" : "2.1.0"
       }
     },
     {
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/SwiftletUtilities",
       "state" : {
-        "revision" : "2903319b5a082b649a0f608f5c30fa3f78c42cc8",
-        "version" : "2.0.4"
+        "revision" : "9ef9333b19433eb9a6d344a1ed0c1c00fb232e5a",
+        "version" : "2.1.3"
       }
     },
     {
@@ -51,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Appracatappra/SwiftUIKit",
       "state" : {
-        "revision" : "539a2f78c88e85645a8ac1f2d086f1631613c9bd",
-        "version" : "2.0.2"
+        "revision" : "2f5c6f97d102cc480c6cbc78cb9a53a83f535d6f",
+        "version" : "2.1.0"
       }
     }
   ],
